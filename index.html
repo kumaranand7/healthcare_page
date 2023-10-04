@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Page</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f6f8;
+        }
+
+
+
+        .sidebar {
+            background-color: #0a586c;
+            width: 110px; /* Adjust the width as needed */
+            min-height: 100vh;
+            position: fixed;
+        }
+
+   
+
+        .main-content {
+            margin-left: 100px;
+            margin-right:10px ; 
+            margin-top:20px ; 
+            margin-bottom:0px ; /* Adjust the margin to match sidebar width */
+            padding: 40px;
+        }
+
+        .main-content2 {
+            margin-left: 100px;
+            margin-right:10px ; 
+            margin-top:100px ; 
+            margin-bottom:0px ; /* Adjust the margin to match sidebar width */
+            padding: 40px;
+        }
+
+
+        .profile-block {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .profile img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%; /* To make the image circular */
+            margin-top: 140px;
+            
+        }
+
+        .profile-info {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .profile-button {
+            background-color: #09886c;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Add custom CSS for the profile blocks container */
+        .profile-container {
+            display: flex;
+            flex-direction: column; /* Vertical alignment */
+            align-items: center; /* Center horizontally */
+        }
+
+        /* Square profile blocks */
+        .profile-block.square-profile {
+            padding: 5px; /* Adjust padding as needed */
+        }
+
+        .profile-block.block-1 {
+            width: 250px;
+            height: 250px;
+        }
+
+        .profile-block.block-2 {
+            width: 200px;
+            height: 150px;
+        }
+
+        .profile-block.block-3 {
+            width: 200px;
+            height: 150px;
+            margin-left: -30px;
+        }
+
+        .profile-block.block-4 {
+            width: 200px;
+            height: 150px;
+            margin-left: -60px;
+        }
+
+        .profile-block.block-5 {
+            width: 250px;
+            height: 300px;
+        }
+
+        .profile-block.block-6
+         {
+            width: 820px; 
+            height: 120px; 
+            margin-left: 140px;
+            margin-right:10px ; 
+            margin-top:-120px ; 
+            margin-bottom:0px 
+        }
+
+        .profile-block.block-7
+         {
+            width: 820px; 
+            height: 240px; 
+            margin-left: 478px;
+            margin-right:11px ; 
+            margin-top:-295px ; 
+            margin-bottom:0px 
+            
+        }
+
+      
+
+        /* Custom class for aligning blocks 2, 3, and 4 to the right of block 1 */
+        .horizontal-align-right {
+            display: flex;
+            flex-direction: row; /* Horizontal alignment */
+            justify-content: flex-start; /* Align to the left */
+        }
+
+        /* Adjust margin between Block 2 and Block 3 */
+        .profile-block.square-profile + .profile-block.square-profile {
+            margin-left:490px;
+            margin-top:-20px;
+            
+        }
+
+/* Custom CSS for the container */
+#block-container {
+    margin-top: 80px;
+    margin-right: -100px;
+    margin-bottom:10px;
+    margin-left:-120px;
+}
+
+.profile-block.block-5 {
+    margin-top: -70px;
+    margin-right: -230px;
+    margin-bottom:10px;
+    margin-left:-120px;
+
+
+    /* Custom CSS for the container margin */
+.custom-container-margin {
+    margin-top: 40px; /* Adjust the top margin for the container as needed */
+    margin-right: 10px; /* Adjust the right margin for the container as needed */
+    margin-bottom: 30px; /* Adjust the bottom margin for the container as needed */
+    margin-left: 20px; /* Adjust the left margin for the container as needed */
+}
+
+
+
+
+/* CSS for left-aligning text within Block 5 */
+.block-5-content {
+    text-align: left;
+    font-size:11px; /
+}
+
+
+.block-5-content table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .block-5-content td {
+        font-size: 10px; /* Adjust the font size as needed */
+        padding: 7px; /* Adjust the margin/padding as needed */
+       
+    }
+
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+
+    
+    <div class="row">
+       <!-- Sidebar -->
+<nav class="col-md-2 d-none d-md-block sidebar">
+    <div class="position-sticky">
+        <!-- Sidebar content goes here -->
+        <h2 class="text-light">
+            <img src="https://github.com/kumaranand7/healthcare_page/blob/master/Screenshot%202023-10-04%20125946.png?raw=true" alt="Company Logo" width="50px" height="50px"  style="margin: 20px;> <!-- Replace "your-logo-image-url.jpg" with the URL of your logo image -->
+        </h2>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link text-light" href="#"> <img src="https://github.com/kumaranand7/healthcare_page/blob/master/Screenshot%202023-10-04%20130552.png?raw=true" alt="Company Logo" width="20px" height="20px"  style="margin: 10px;></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#"> <img src="https://github.com/kumaranand7/healthcare_page/blob/master/Screenshot%202023-10-04%20130710.png?raw=true" alt="Company Logo" width="20px" height="20px"  style="margin: 10px;></li>
+                <li class="nav-item"><a class="nav-link text-light" href="#"> <img src="https://github.com/kumaranand7/healthcare_page/blob/master/Screenshot%202023-10-04%20130719.png?raw=true" alt="Company Logo" width="20px" height="20px"  style="margin: 10px;></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#"> <img src="https://github.com/kumaranand7/healthcare_page/blob/master/Screenshot%202023-10-04%20130728.png?raw=true" alt="Company Logo" width="20px" height="20px"  style="margin: 10px;></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="#"> <img src="https://github.com/kumaranand7/healthcare_page/blob/master/Screenshot%202023-10-04%20130719.png?raw=true" alt="Company Logo" width="20px" height="20px"  style="margin: 10px;></li>
+                                <li class="nav-item"><a class="nav-link text-light" href="#"> <img src="https://github.com/kumaranand7/healthcare_page/blob/master/Screenshot%202023-10-04%20130734.png?raw=true" alt="Company Logo" width="20px" height="20px"  style="margin: 10px;></li>
+
+            
+            <li class="nav-item"><a class="nav-link text-light" href="#"></a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#"></a></li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+ <!-- Profile Block 1 -->
+<div class="col-md-2 offset-md-2 main-content">
+    <div class="dashboard-header">
+        <p class="back-to-dashboard"><span>&#8592;</span> <small>Back to Dashboard</small></p>
+        <p><b><small>Current Appointment</small></b></p>
+    </div>
+    <div class="profile-container">
+        <div class="profile-block square-profile block-1">
+            <!-- Block name added -->
+            <img src="https://github.com/kumaranand7/healthcare_page/blob/master/Screenshot%202023-10-04%20125346.png?raw=true" alt="DP" height="80px" class="square-profile" style="border-radius: 10px; margin-top: 10px;">
+
+            <div class="profile-info">
+                <p><b>Roger Curtis</b></p>
+                <p>Age: 36</p>
+            </div>
+            <button class="profile-button">Update</button>
+        </div>
+    </div>
+</div>
+
+        <!-- Profile Block 2, 3, and 4 (Horizontally Aligned) -->
+       <!-- Profile Block 2 (Horizontally Aligned) -->
+<div class="col-md-2 main-content2">
+    <div class="profile-container">
+        <div class="profile-block square-profile block-2">
+            <img src="https://github.com/kumaranand7/healthcare_page/blob/master/heartlogo.png?raw=true" alt="DP" height="25px" class="square-profile">
+            <div class="profile-info">
+                <p>Heart rate</p>
+                <p> <b><big>80</big> </b><small>bpm</small></p>
+                <!-- Add heart rate information -->
+               
+            </div>
+            <!-- ... (Block 2 content) ... -->
+        </div>
+    </div>
+</div>
+
+                
+               <!-- Profile Block 3 (Horizontally Aligned) -->
+<div class="col-md-2 main-content2">
+    <div class="profile-container">
+        <div class="profile-block square-profile block-3">
+            <img src="https://github.com/kumaranand7/healthcare_page/blob/master/temp.png?raw=true" alt="DP" height="40px" class="square-profile">
+            <div class="profile-info">
+                <p>Body Temperature</p>
+                <p> <b><big>36.5</big> </b><small>&deg;c</small></p>
+            </div>
+            <!-- ... (Block 3 content) ... -->
+        </div>
+    </div>
+</div>
+
+<!-- Profile Block 4 (Horizontally Aligned) -->
+<div class="col-md-2 main-content2">
+    <div class="profile-container">
+        <div class="profile-block square-profile block-4" >
+            <img src="https://github.com/kumaranand7/healthcare_page/blob/master/glucose.png?raw=true" alt="DP" height="40px" class="square-profile">
+            <div class="profile-info">
+                <p>Glucose</p>
+                <p> <b><big>100</big> </b><small>mg/dll</small></p>
+              
+            </div>
+            <!-- ... (Block 4 content) ... -->
+        </div>
+    </div>
+</div>
+
+
+        <!-- Profile Block 5 (Horizontally Aligned) -->
+        <!-- Profile Block 5 (Horizontally Aligned) -->
+<!-- Profile Block 5 (Horizontally Aligned) -->
+<div class="col-md-2 main-content">
+    <div class="profile-container">
+        <div class="profile-block square-profile block-5">
+   
+            <!-- Content for Block 5 -->
+            <div class="block-5-content">
+                <table>
+                    <tr>
+                        <td><b>Information:</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Gender:</b></td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td><b>Blood Type:</b></td>
+                        <td>O+ (Positive)</td>
+                    </tr>
+                    <tr>
+                        <td><b>Allergies:</b></td>
+                        <td>Milk, Penicillin</td>
+                    </tr>
+                    <tr>
+                        <td><b>Diseases:</b></td>
+                        <td>Diabetes, Blood Disorders</td>
+                    </tr>
+                    <tr>
+                        <td><b>Height:</b></td>
+                        <td>1.78m</td>
+                    </tr>
+                    <tr>
+                        <td><b>Weight:</b></td>
+                        <td>65 kg</td>
+                    </tr>
+                    <tr>
+                        <td><b>Patient ID:</b></td>
+                        <td>208898786</td>
+                    </tr>
+                    <tr>
+                        <td><b>Last Visit:</b></td>
+                        <td>25th October 2019</td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<!-- Profile Block 6 (Right of 5) -->
+<div class="profile-block square-profile block-6">
+    <h4 style="text-align: left; margin-left: 20px;">Test Reports</h4>
+    <!-- Add a heading "Hello" -->
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+        <!-- First Column: Image -->
+        <div style="flex: 4; text-align: center;">
+            <img src="https://github.com/kumaranand7/healthcare_page/blob/master/ct.png?raw=true" alt="Icon" height="40px"  style="border-radius: 5px";>
+        </div>
+        <!-- Second Column: Name and Age on the Right of Image -->
+        <div style="flex: 9; text-align: left; display: flex; flex-direction: column;">
+            <p ><b >CT scan full body</b></p>
+           <span> <p><small>February 2020</small> </p> 
+        </div>
+
+        <div style="flex: 4; text-align: center;">
+            <img src="https://github.com/kumaranand7/healthcare_page/blob/master/creatine.png?raw=true" alt="Icon" height="40px"  style="border-radius: 5px";>
+        </div>
+        <!-- Second Column: Name and Age on the Right of Image -->
+        <div style="flex: 9; text-align: left; display: flex; flex-direction: column;">
+            <p><b>Creatine kinase T</b></p>
+            <p><small>February 2020</small> </p>
+        </div>
+
+        <div style="flex: 4; text-align: center;">
+            <img src="https://github.com/kumaranand7/healthcare_page/blob/master/eye%20test.png?raw=true" alt="Icon" height="40px"  style="border-radius: 5px";>
+        </div>
+        <!-- Second Column: Name and Age on the Right of Image -->
+        <div style="flex: 9; text-align: left; display: flex; flex-direction: column;">
+            <p><b>Eye Test</b></p>
+            <p><small>February 2020</small> </p>
+        </div>
+    </div>
+    <!-- ... (Block 6 content) ... -->
+</div>
+
+
+
+        <!-- Profile Block 7 (Below 6) -->
+        <div class="profile-block block-7">
+            <h4 style="text-align: left; margin-left: 20px;"><b>Prescriptions</b></h4>
+            <h6 style="text-align: center; color: #09886c;"><b><span style="border: 1px dotted #09886c; height: 45px; width: 700px; padding: 5px 10px; display: inline-block;">+ Add a Prescription</span></b></h6>
+            
+            <div class="prescription-rows" style="display: flex; justify-content: space-between;">
+                <div class="row" style="text-align: left; margin-left: 10px;">
+                    Prescription
+                </div>
+                
+                <div class="row" style="text-align: center;">
+                    Date
+                </div>
+                <div class="row" style="text-align: right; margin-right: 10px;">
+                    Duration
+                </div>
+            </div>
+                    <!-- adding content in row 1 -->
+                    
+                    <div class="prescription-rows" style="display: flex; justify-content: space-between; margin-top: 10px; ">
+                        <div class="row" style="text-align: left; display: flex; align-items: center; margin-left: 10px;">
+                            <span>
+                            <img src="https://github.com/kumaranand7/healthcare_page/blob/master/Screenshot%202023-10-04%20132127.png?raw=true" alt="Logo" width="25" height="20" style="margin-left: 10px; border-radius: 5px;" >
+                            <b style="margin-left: 5px;">Heart Disease</b></span>
+                        </div>
+                    
+                        <div class="row" style="text-align: center; display: flex; align-items: center; margin-right: 70px;">
+                            25th October 2019
+                        </div>
+                        <div class="row" style="text-align: right; margin-right: 10px; display: flex; align-items: center;">
+                            3 months
+                        </div>
+                        
+                    </div>
+                    
+                    <hr style="margin-left: 30px; border-width: 0.5px; border-color: grey;">
+
+
+                    <!-- adding content in row 2 -->
+                    
+                    <div class="prescription-rows" style="display: flex; justify-content: space-between; margin-top: 10px;
+                    ">
+                        <div class="row" style="text-align: left; display: flex; align-items: center; margin-left: 10px;">
+                            <span>
+                                <img src="https://github.com/kumaranand7/healthcare_page/blob/master/Screenshot%202023-10-04%20132127.png?raw=true" alt="Logo" width="25" height="20" style="margin-left: 10px; border-radius: 5px;" >
+                                <b style="margin-left: 5px;">Skin Care</b></span>
+                        </div>
+                    
+                        <div class="row" style="text-align: center; display: flex; align-items: center; margin-right: 40px;">
+                            8th August 2019
+                        </div>
+                        <div class="row" style="text-align: right; margin-right: 10px; display: flex; align-items: center;">
+                            2 months
+                        </div>
+                        
+                    </div>
+                    
+                   
+                    <!-- ... (Block 7 content) ... -->
+                </div>
+        
+    </div>
+</div>
+
+<div class="position-absolute top-0 end-0" style="margin-top: 20px; margin-right: 20px;">
+    <span>
+        <img src="https://www.vhv.rs/dpng/d/436-4367194_notification-icon-png-free-clipart-png-download-transparent.png" alt="Logo" width="25" height="25" style="margin-left: 10px;">
+
+        <img src="https://github.com/kumaranand7/healthcare_page/blob/master/Screenshot%202023-10-04%20130131.png?raw=true" alt="Logo" width="40" height="40" style="margin-left: 10px;">
+        <b style="margin-left: 5px;">Heart Disease </b>  <sub> <span>&#129171;</span></sub>
+     </span>
+</div>
+
+<!-- Add Bootstrap JS and Popper.js (required for Bootstrap) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@2.11.6/dist/umd/popper.min.js"></script>
+</body>
+</html>
